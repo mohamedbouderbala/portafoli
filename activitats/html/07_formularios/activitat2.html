@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Selecciona les teves preferencies</legend>
+            <label for="model">Model</label>
+            <select name="model" required>
+                <option value="R4">R4</option>
+                <option value="R5">R5</option>
+                <option value="SR1">SR1</option>
+            </select><br><br>
+            <label for="potencia">Potencia màxima (entre 0 y 50)</label><br>
+            <input type="range" name="potencia" min="0" max="50"><br><br>
+            <label for="bluetooth">Bluetooth?</label>
+            <input type="checkbox" name="bluetooth"><br><br>
+            <label for="color">Color</label>
+            <select name="color" required>
+                <option value="blau">Blau</option>
+                <option value="blanc">Blanc</option>
+                <option value="groc">Groc</option>
+                <option value="negre">Negre</option>
+            </select><br><br>
+            <button type="submit">Comprar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
