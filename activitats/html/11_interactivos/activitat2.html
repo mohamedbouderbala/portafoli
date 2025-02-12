@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2 - Interactius</title>
+</head>
+<body>
+    <h1>Buscador de Smartphones</h1>
+    <form>
+        <label>Busca la marca
+            <input list="marca" type="text" name="marca">
+        </label>
+        <datalist id="marca">
+            <option value="Motorola"></option>
+            <option value="Alcatel"></option>
+            <option value="Xiaomi"></option>
+            <option value="Apple"></option>
+            <option value="Oppo"></option>
+            <option value="Samsung"></option>
+            <option value="Huawei"></option>
+        </datalist> <br><br>
+        <label for="preu">Rang del preu:</label>
+        <select name="preu">
+            <option value="0-50">0€ - 50€</option>
+            <option value="50-100">50€ - 100€</option>
+            <option value="100-200">100€ - 200€</option>
+            <option value="200-300">200€ - 300€</option>
+            <option value="300-600">300€ - 600€</option>
+            <option value="600-850">600€ - 850€</option>
+            <option value="850-1000">850€ - 1000€</option>
+        </select> <br><br>
+        <button>Buscar</button>
+    </form>
+</body>
+</html>
