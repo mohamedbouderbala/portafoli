@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 4</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Busca la teva camara</legend>
+            <label for="marca">Marca</label>
+            <select name="marca" required>
+                <option value="Sony">Sony</option>
+                <option value="Panasonic">Panasonic</option>
+                <option value="Gopro">GoPro</option>
+                <option value="Fujifilm">Fujifilm</option>
+                <option value="Canon">Canon</option>
+            </select><br><br>
+            <label for="tipo">Tipus</label>
+            <select name="tipo" required>
+                <option value="sensemirall">Sense Mirall</option>
+                <option value="migformat">De mig format</option>
+                <option value="aps-c">APS-C</option>
+                <option value="instantanea">Instantanea</option>
+            </select><br><br>
+            <label for="resolucio">Resolució</label>
+            <select name="resolucio" required>
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+                <option value="4k">4k</option>
+                <option value="8k">8k</option>
+            </select><br><br>
+            <label for="preu-minim">Preu Mínim (de 0 a 850)</label><br>
+            <input type="range" id="preu-minim" name="preu-min" min="0" max="850"><br><br>
+            <button type="submit">Buscar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
