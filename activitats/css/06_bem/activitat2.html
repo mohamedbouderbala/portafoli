@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .formulario {
+            max-width: 600px;
+        }
+        .formulario input[type="text"],
+        .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #333;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .formulario input[type="text"]:focus,
+        .formulario textarea:focus {
+            border-color: #66bb6a;
+            box-shadow: 0 0 8px rgba(102, 187, 106, 0.5);
+            outline: none;
+        }
+
+        .formulario textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .formulario__etiqueta {
+            display: block;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+    
+        .formulario__boton {
+            background-color: #66bb6a;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .formulario__boton:hover {
+            background-color: #4caf50;
+        }
+
+        .formulario__boton:active {
+            transform: scale(0.98);
+        }
+
+        .publicacion {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comentarios</h1>
+    </header>
+
+    <section>
+        <form class="formulario">
+            <div>
+                <label for="nombre" class="formulario__etiqueta">Nombre:</label>
+                <input type="text" name="nombre"  placeholder="Tu nombre" required>
+            </div>
+
+            <div>
+                <label for="texto" class="formulario__etiqueta">Texto:</label>
+                <textarea name="texto"  placeholder="Escribe tu comentario aquí..." required></textarea>
+            </div>
+
+            <button type="submit" class="formulario__boton">Publicar</button>
+        </form>
+    </section>
+
+    <section>
+        <article class="publicacion">
+            <h2>Usuario1</h2>
+            <p>Muy Interesante</p>
+        </article>
+
+        <article class="publicacion">
+            <h2>Usuario2</h2>
+            <p>Muchas gracias por la ayuda</p>
+        </article>
+
+        <article class="publicacion">
+            <h2>Usuario3</h2>
+            <p>Buen servicio, lo recomendaria a mis conocidos</p>
+        </article>
+    </section>
+</body>
+</html>

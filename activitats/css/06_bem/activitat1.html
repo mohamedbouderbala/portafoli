@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - BEM</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        list-style-type: none;
+        margin: 2rem 0 2rem 0;
+        margin-right: 1rem;
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    nav ul li {
+            margin: 1px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-size: 20px;
+        }
+        nav ul li a:hover {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+            font-weight: strong;
+        }
+
+        .search-form button {
+            padding: 5px 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-left: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-form button:hover {
+            background-color: #000000;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+</style>
+<body>
+    <header class="header">
+        <img src= "activitat1/cr7.jpg" alt="Logo CR7">
+
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#">Inici</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Registre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="search-form" action="/cristianoronaldo" method="get">
+        <input type="text" name="search" placeholder="Busca algo...">
+        <button type="submit">Busca</button>
+    </form>
+</body>
+</html>
