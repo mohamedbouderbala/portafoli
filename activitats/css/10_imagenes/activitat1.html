@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat sencillo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .chat-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .avatar img {
+            width: 40px;
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border-radius: 50%; 
+            margin-right: 10px;
+        }
+
+        .message-content {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .date {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .message-text {
+            color: #444;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="message">
+            <div class="avatar">
+                <img src="activitat1/cr7madrid.jpg" alt="Avatar Persona 1">
+            </div>
+            <div class="message-content">
+                <div class="name">Cristiano Ronaldo 2017</div>
+                <div class="date">10/10/2017</div>
+                <div class="message-text">
+                    ¡Hola! ¿Cómo estás?
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <div class="avatar">
+                <img src="activitat1/cr7alnassr.jpg" alt="Avatar Persona 2">
+            </div>
+            <div class="message-content">
+                <div class="name">Cristiano Ronaldo Actualmente</div>
+                <div class="date">10/10/2025</div>
+                <div class="message-text">
+                    ¡Hola! Estoy bien, ha pasado mucho tiempo desde la ultima vez
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
